@@ -57,6 +57,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>AP_PLATFORM_WINDOWS;AP_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)apollo\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -71,6 +72,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>AP_PLATFORM_WINDOWS;AP_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)apollo\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -80,13 +82,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="apollo\SRC\Apollo.h" />
+    <ClInclude Include="apollo\SRC\Apollo\Application.h" />
+    <ClInclude Include="apollo\SRC\Apollo\Core.h" />
+    <ClInclude Include="apollo\SRC\Apollo\EntryPoint.h" />
+    <ClInclude Include="apollo\SRC\Apollo\Log.h" />
+    <ClInclude Include="SandBox\Header.h" />
     <ClInclude Include="SRC\Apollo.h" />
     <ClInclude Include="SRC\Apollo\Application.h" />
     <ClInclude Include="SRC\Apollo\Core.h" />
     <ClInclude Include="SRC\Apollo\EntryPoint.h" />
+    <ClInclude Include="SRC\Apollo\Log.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="apollo\SRC\Apollo\Application.cpp" />
+    <ClCompile Include="apollo\SRC\Apollo\Log.cpp" />
+    <ClCompile Include="SandBox\SandboxApp.cpp" />
     <ClCompile Include="SRC\Apollo\Application.cpp" />
+    <ClCompile Include="SRC\Apollo\Log.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug-x64\SandBox\Apollo.dll" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

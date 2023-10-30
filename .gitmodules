@@ -1,0 +1,3 @@
+[submodule "apollo/vendor/spdlog"]
+	path = apollo/vendor/spdlog
+	url = https://github.com/gabime/spdlog

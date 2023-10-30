@@ -18,19 +18,55 @@
     <ClInclude Include="SRC\Apollo\Core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SRC\Apollo\Application.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SRC\Apollo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SRC\Apollo\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="apollo\SRC\Apollo\Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="apollo\SRC\Apollo\Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="apollo\SRC\Apollo\EntryPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="apollo\SRC\Apollo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="apollo\SRC\Apollo\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SandBox\Header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Apollo\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Apollo\Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="apollo\SRC\Apollo\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="apollo\SRC\Apollo\Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SandBox\SandboxApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\Apollo\Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="SRC\Apollo\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug-x64\SandBox\Apollo.dll" />
   </ItemGroup>
 </Project>
